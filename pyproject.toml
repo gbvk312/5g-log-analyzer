@@ -26,5 +26,22 @@ dependencies = []
 [project.scripts]
 5g-log-analyzer = "analyzer:main"
 
+[project.entry-points."ttt.plugins"]
+log-analyzer = "log_analyzer_plugin:LogAnalyzerPlugin"
+
 [tool.setuptools.py-modules]
-modules = ["analyzer"]
+modules = ["analyzer", "log_analyzer_plugin"]
+
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.9"
+strict = true
+ignore_missing_imports = true

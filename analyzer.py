@@ -1,7 +1,6 @@
 import argparse
 import re
 import sys
-from typing import Dict
 
 
 def analyze_logs(log_file_path: str) -> None:

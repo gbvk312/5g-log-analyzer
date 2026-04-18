@@ -26,9 +26,9 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Standard logs and databases
-*.log
-*.sqlite
+# PyInstaller
+*.manifest
+*.spec
 
 # Unit test / coverage reports
 htmlcov/
@@ -68,3 +68,8 @@ venv.bak/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite
+logs/
